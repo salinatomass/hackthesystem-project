@@ -1,17 +1,13 @@
-/* :root {
+:root {
   --color1: #f38282;
   --color2: #fce48b;
   --color3: #ebffd1;
   --color4: #96e2d4;
+
+  --font: 'Roboto', sans-serif;
+  --font-logo: 'Gugi', cursive;
 }
 
 body {
-  background-color: #ff0f5d;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 2em;
-  text-align: center;
+  font-family: var(--font);
 }
-
-img {
-  width: 200px;
-} */
