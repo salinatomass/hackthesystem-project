@@ -7,6 +7,7 @@ import NotFound from '../pages/NotFound';
 import Register from '../pages/Register';
 import Login from '../pages/Login';
 import Layout from '../components/Layout';
+import Courses from '../pages/Courses';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/auth/register" element={<Register />} />
             <Route exact path="/auth/login" element={<Login />} />
+            <Route exact path="/courses" element={<Courses />} />
           </Routes>
         </Layout>
       </AuthProvider>
