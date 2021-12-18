@@ -23,47 +23,34 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+                <a class="nav-link" href="#">Iniciar sesion</a>
+              </li> 
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
     </nav>
     <!--Form-->
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-6">
-                <form>
-                    <div class="mb-3">
-                      <label for="InputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
-                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="InputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="InputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Register</button>
-                  </form>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-sm-8 col-md-6 col-lg-4">
+                <div class="container-fluid mt-5 border ">
+                    <h1 class="mt-4"> Inicio de sesion</h1>
+                    <form>
+                        <div class="mb-3">
+                          <label for="InputEmail1" class="form-label">Nombre o Correo electronico</label>
+                          <input type="text" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Nombre o correo@gmail.com">
+                          <div id="emailHelp" class="form-text">Nunca compartiremos tus datos con alguien mas.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="InputPassword1" class="form-label">Contraseña</label>
+                          <input type="password" class="form-control" id="InputPassword1" placeholder="contraseña">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-3">Iniciar sesion</button>
+                        <div class="d-flex d-row mb-4">
+                            <p class="me-2">No tienes cuenta? </p> <a class="" href="register.html">registrate</a>
+                        </div>
+                    </form>
+                </div>  
             </div>
         </div>
     </div>
