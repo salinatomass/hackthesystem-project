@@ -7,7 +7,7 @@ Description...
 1. Clone this project
 2. Go to project's folder
 3. Install dependencies `npm install`
-4. Run and have fun ;) `npm run dev`
+4. Run and have fun ;) `npm start`
 
 ## Scripts
 
