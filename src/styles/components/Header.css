@@ -8,3 +8,6 @@
   text-decoration: none;
   color: var(--color3);
 }
+.Header-logo {
+  font-family: var(--font-logo);
+}

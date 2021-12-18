@@ -1,6 +1,6 @@
 import { authActions } from '../actions/authActions';
 
-const user = localStorage.getItem('user') || null; // ;
+const user = JSON.parse(localStorage.getItem('user')) || null; // ;
 
 export const initialState = {
   isLoggedIn: Boolean(user),
@@ -40,7 +40,7 @@ export const authReducer = (state = initialState, action) => {
     case authActions.AUTH_LOGIN__SUCCESS:
       return {
         ...state,
-        user: user,
+        user: payload,
         isLoading: false,
         errorMessage: null,
       };

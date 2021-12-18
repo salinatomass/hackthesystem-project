@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/providers/AuthContext';
+import { Link } from 'react-router-dom';
 
 import { useNavigate } from 'react-router-dom';
 
@@ -29,63 +30,67 @@ const Register = () => {
   };
 
   return (
-    <>
-      <div className="container-fluid">
-        <div className="d-flex flex-row justify-content-center">
-          <div className=" col-md-6 p-5 border">
-            <form
-              className="d-flex flex-column justify-content-center g-3"
-              onSubmit={handleSubmit}
-            >
-              <div className="col-md-12 mb-3">
-                <label htmlFor="username" className="form-label">
-                  Nombre
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="username"
-                  name="username"
-                  placeholder="Tu nombre de usuario"
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="col-md-12 mb-3">
-                <label htmlFor="email" className="form-label">
-                  Correo electronico
-                </label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="Correo@correo.com"
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="col-md-12 mb-5">
-                <label htmlFor="password" className="form-label">
-                  Contraseña
-                </label>
-                <input
-                  type="password"
-                  className="form-control"
-                  id="password"
-                  name="password"
-                  placeholder="contraseña"
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="col-12">
-                <button type="submit" className="btn btn-primary">
-                  Registrar
-                </button>
-              </div>
-            </form>
+    <div className="container-fluid">
+      <div className="d-flex flex-row justify-content-center">
+        <div className=" col-md-6 p-5 border">
+          <form
+            className="d-flex flex-column justify-content-center g-3"
+            onSubmit={handleSubmit}
+          >
+            <div className="col-md-12 mb-3">
+              <label htmlFor="username" className="form-label">
+                Nombre
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="username"
+                name="username"
+                placeholder="Tu nombre de usuario"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="col-md-12 mb-3">
+              <label htmlFor="email" className="form-label">
+                Correo electronico
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                id="email"
+                name="email"
+                placeholder="Correo@correo.com"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="col-md-12 mb-5">
+              <label htmlFor="password" className="form-label">
+                Contraseña
+              </label>
+              <input
+                type="password"
+                className="form-control"
+                id="password"
+                name="password"
+                placeholder="contraseña"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="col-12">
+              <button type="submit" className="btn btn-primary">
+                Registrate
+              </button>
+            </div>
+          </form>
+          <div className="d-flex d-row mb-4 mt-4">
+            <p className="me-2">Ya tienes una cuenta? </p>{' '}
+            <Link to="/auth/login" href="register.html">
+              Inicia sesión
+            </Link>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

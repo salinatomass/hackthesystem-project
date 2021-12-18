@@ -6,7 +6,7 @@ export const register = async user => {
   return await axios.post(`${API}user/signup`, user);
 };
 
-// export const login = async user => await axios.post(API, user);
+export const login = async user => await axios.post(`${API}user/login`, user);
 
 // export const profile = async token =>
 //   await axios.get(API, {

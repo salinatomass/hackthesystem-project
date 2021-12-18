@@ -19,10 +19,9 @@ export const AuthProvider = ({ children }) => {
     dispatch({ type: authActions.AUTH_REGISTER });
     try {
       const res = await register({ email, password, username });
-      console.log('res: ', res);
       const user = res.data;
 
-      localStorage.setItem('user', user);
+      localStorage.setItem('user', JSON.stringify(user));
 
       dispatch({
         type: authActions.AUTH_REGISTER_SUCCESS,
@@ -41,8 +40,33 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const signin = async ({ username, password }) => {
+    dispatch({ type: authActions.AUTH_LOGIN });
+    try {
+      const res = await login({ username, password });
+      const { user } = res.data;
+
+      localStorage.setItem('user', JSON.stringify(user));
+
+      dispatch({
+        type: authActions.AUTH_LOGIN__SUCCESS,
+        payload: user,
+      });
+
+      return user;
+    } catch (err) {
+      const errorData = err.response.data;
+      if (errorData) {
+        dispatch({
+          type: authActions.AUTH_LOGIN__ERROR,
+          payload: errorData.message,
+        });
+      }
+    }
+  };
+
   return (
-    <AuthContext.Provider value={{ ...state, signup }}>
+    <AuthContext.Provider value={{ ...state, signup, signin }}>
       {children}
     </AuthContext.Provider>
   );
