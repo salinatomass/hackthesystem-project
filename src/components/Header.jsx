@@ -8,6 +8,7 @@ const Header = () => {
       <Link to="/">
         <h1 className="Header-logo">ZAP</h1>
       </Link>
+      <Link to="/cursos">Cursos</Link>
       <Link to="/auth/register">Registrate</Link>
     </nav>
   );

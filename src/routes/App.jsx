@@ -19,7 +19,7 @@ const App = () => {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/auth/register" element={<Register />} />
             <Route exact path="/auth/login" element={<Login />} />
-            <Route exact path="/courses" element={<Courses />} />
+            <Route exact path="/cursos" element={<Courses />} />
           </Routes>
         </Layout>
       </AuthProvider>
