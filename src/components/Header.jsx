@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "../styles/components/Header.css"
+import '../styles/components/Header.css';
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
       <Link to="/">
         <h1 className="Header-logo">ZAP</h1>
       </Link>
-      <Link to="/auth/login">Iniciar Sesión</Link>
+      <Link to="/auth/register">Registrate</Link>
     </nav>
   );
 };

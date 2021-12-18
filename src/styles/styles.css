@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --color1: #f38282;
   --color2: #fce48b;
   --color3: #ebffd1;
@@ -9,8 +9,9 @@ body {
   background-color: #ff0f5d;
   color: rgba(255, 255, 255, 0.8);
   font-size: 2em;
+  text-align: center;
 }
 
 img {
   width: 200px;
-}
+} */
