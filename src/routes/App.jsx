@@ -7,6 +7,8 @@ import NotFound from '../pages/NotFound';
 import Register from '../pages/Register';
 import Login from '../pages/Login';
 import Layout from '../components/Layout';
+import Theory from "../pages/Theory";
+import Exercise from "../pages/Excercise";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/auth/register" element={<Register />} />
             <Route exact path="/auth/login" element={<Login />} />
+            <Route exact path="/theory" element={<Theory />} />
+            <Route exact path="/exercises" element={<Exercise />} />
           </Routes>
         </Layout>
       </AuthProvider>
